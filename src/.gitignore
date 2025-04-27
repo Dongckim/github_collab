@@ -1,0 +1,36 @@
+# Ignore .vs folder created by Visual Studio
+.vs/
+
+# Ignore user-specific Visual Studio config data (ProjectName/17)
+*/17/
+
+# Ignore VS Code settings folder
+.vscode/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+*.egg-info/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore PyInstaller build directories
+dist/
+build/
+
+# Ignore the Python Pipfile lock file
+Pipfile.lock
