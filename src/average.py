@@ -23,6 +23,6 @@ for student in data:
 # Calculate the average score if there are any valid students
 if student_count > 0:
     average_score = total_score / student_count
-    print(f"Average Score: {average_score}")
+    print(f"Average Score: {average_score:.2f}")
 else:
     print("No valid students with scores.")
