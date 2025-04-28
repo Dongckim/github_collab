@@ -2,7 +2,6 @@ import csv
 
 # express the average grade of each student in the database
 def save_to_csv(students_data):
-    f = open('output.csv', 'w', newline='') 
     f = open('../output/result.csv', 'w', newline='') 
     writer = csv.writer(f)
     writer.writerow(['student database'])
