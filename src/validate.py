@@ -1,6 +1,16 @@
-# 학생 이름(name)이 문자열인지 확인.
-# 점수(scores)가 리스트인지 확인.
-# 각 점수가 숫자형인지 확인.
-# 점수 배열이 비어 있지 않은지 확인 (선택 사항).
-# 특정 학생에 대한 잘못된 데이터 (예: scores가 문자열인 경우)를 처리.
+def validate_json(students_data):
 
+    for member in students_data:
+        name = member.get('name')
+        scores = member.get('scores')
+
+        if not isinstance(name, str):
+            print(f"Invalid student name type for {member}")
+        if not isinstance(scores, list):
+            print(f"Invalid scores format for {name}: current format {type(scores)}")
+        for score in scores:
+            if not isinstance(score, int):
+                print(f"Invalid score types for {name}")
+                break
+        if not scores:
+            print(f"Scores for {name} is not available")
